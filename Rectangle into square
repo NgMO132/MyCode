@@ -1,0 +1,18 @@
+def sqInRect(lng, wdth):
+    area = lng * wdth
+    result = []
+    if lng == wdth:
+        return None
+    if lng != wdth:
+        while area > 0:
+            if lng > wdth:
+                result.append(wdth)
+                area -= wdth * wdth
+                lng = lng - wdth
+            else:
+                result.append(lng)
+                area -= lng * lng
+                wdth = wdth - lng
+    return result
+
+print(sqInRect(5,54))
