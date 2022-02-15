@@ -1,0 +1,17 @@
+public class Solution
+{
+    public static int add(int x, int y)
+    {
+    while (y != 0){
+        int carry = x & y;
+        x = x ^ y;
+        y = carry << 1;
+    }
+        return x;
+    }
+  
+  public static void main(String[] args){
+    int sum = add(5,4);
+    System.out.println(sum);
+  }
+}
