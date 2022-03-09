@@ -1,0 +1,183 @@
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+        int type = artifactType();
+        if(type == 0){
+            System.out.println("HP");  
+        }
+        if(type == 1){
+            System.out.println("ATK");  
+        }
+        if(type == 2){
+            sandsMainStats();
+        }
+        if(type == 3){
+            gobletMainStats();
+        }
+        if(type == 4){
+            circletMainStats();
+        }
+
+    }
+    
+    public static int artifactType(){
+        Random rd = new Random();
+	    int type = rd.nextInt(5);
+		switch(type){
+		  case 0:
+		     System.out.println("flower");
+		     break;
+		  case 1:
+		     System.out.println("plume");
+		     break;
+		  case 2:
+		     System.out.println("sands");
+		     break;
+		  case 3:
+		     System.out.println("goblet");
+		     break;
+		  case 4:
+		     System.out.println("circlet");
+		     break;
+		}
+        return type;
+    }
+    
+    public static int sandsMainStats(){
+        Random rd = new Random();
+	    int sands = rd.nextInt(5);
+		switch(sands){
+		  case 0:
+		     System.out.println("HP%");
+		     break;
+		  case 1:
+		     System.out.println("ATK%");
+		     break;
+		  case 2:
+		     System.out.println("DEF%");
+		     break;
+		  case 3:
+		     System.out.println("Energy Recharge");
+		     break;
+		  case 4:
+		     System.out.println("Elemental Mastery");
+		     break;
+		}
+        return sands;
+    }
+    
+    public static int gobletMainStats(){
+        Random rd = new Random();
+	    int goblet = rd.nextInt(11);
+		switch(goblet){
+		  case 0:
+		     System.out.println("HP%");
+		     break;
+		  case 1:
+		     System.out.println("ATK%");
+		     break;
+		  case 2:
+		     System.out.println("DEF%");
+		     break;
+		  case 3:
+		     System.out.println("Elemental Mastery");
+		     break;
+		  case 4:
+		     System.out.println("Physical DMG Bonus");
+		     break;
+		  case 5:
+		     System.out.println("Pyro DMG Bonus");
+		     break;
+		  case 6:
+		     System.out.println("Hydro DMG Bonus");
+		     break;
+		  case 7:
+		     System.out.println("Electro DMG Bonus");
+		     break;
+		  case 8:
+		     System.out.println("Cryo DMG Bonus");
+		     break;
+		  case 9:
+		     System.out.println("Anemo DMG Bonus");
+		     break;
+		  case 10:
+		     System.out.println("Geo DMG Bonus");
+		     break;
+		}
+        return goblet;
+    }
+    
+    public static int circletMainStats(){
+        Random rd = new Random();
+	    int circlet = rd.nextInt(7);
+		switch(circlet){
+		  case 0:
+		     System.out.println("HP%");
+		     break;
+		  case 1:
+		     System.out.println("ATK%");
+		     break;
+		  case 2:
+		     System.out.println("DEF%");
+		     break;
+		  case 3:
+		     System.out.println("Healing Bonus");
+		     break;
+		  case 4:
+		     System.out.println("Elemental Mastery");
+		     break;
+		  case 5:
+		     System.out.println("CRIT DMG");
+		     break;
+		  case 6:
+		     System.out.println("CRIT Rate");
+		     break;
+		}
+        return circlet;
+    }
+    
+    public static int substats(){
+        Random rd = new Random();
+	    int sub = rd.nextInt(10);
+		switch(sub){
+		  case 0:
+		     System.out.println("HP%");
+		     break;
+		  case 1:
+		     System.out.println("ATK%");
+		     break;
+		  case 2:
+		     System.out.println("DEF%");
+		     break;
+		  case 3:
+		     System.out.println("Energy Recharge%");
+		     break;
+		  case 4:
+		     System.out.println("Elemental Mastery");
+		     break;
+		  case 5:
+		     System.out.println("CRIT DMG");
+		     break;
+		  case 6:
+		     System.out.println("CRIT Rate");
+		     break;
+		  case 7:
+		     System.out.println("HP");
+		     break;
+		  case 8:
+		     System.out.println("ATK");
+		     break;
+		  case 9:
+		     System.out.println("DEF");
+		     break;
+		}
+        return sub;
+    }
+    
+}
+	
+
