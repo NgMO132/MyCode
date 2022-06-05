@@ -13,3 +13,7 @@ Description: Given two integers values, find the sum of them without using simpl
 Artifact Number Generator
 
 Description: substats and stats will be random
+
+WordCloud
+
+Description: Create WordCloud from Github by using Python
