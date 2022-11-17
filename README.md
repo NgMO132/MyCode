@@ -17,3 +17,7 @@ substats and stats will be random
 ## WordCloud
 
 Create WordCloud from Github by using Python
+
+## Expanded form
+
+Write the whole number in expanded form, example, 70232 = 70000 + 200 + 30 + 2
