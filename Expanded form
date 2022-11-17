@@ -1,0 +1,27 @@
+public class Kata
+{
+    public static String expandedForm(int num)
+    {
+        String outs = "";
+        for (int i = 10; i < num; i *= 10) {
+            int rem = num % i;
+            
+            if (rem > 0){
+                outs = " + " + rem + outs;
+            } else{
+                outs = outs;
+            }
+            // if-else statement
+            
+            outs = (rem > 0) ? " + " + rem + outs : outs;
+            // conditional ternary operator applies the same logic as if-else statement
+            
+            num -= rem;
+            
+            
+        }
+        outs = num + outs;
+
+        return outs;    
+    }
+}
