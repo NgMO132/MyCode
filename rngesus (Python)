@@ -1,0 +1,28 @@
+from random import random
+import numpy as np
+
+main_stats_name = ["heads", "hands", "sands","cups","shoes"]
+substats = ["hp%","atk%","def%","em","er","cr","cd","hp","atk","def"]
+
+def heads():
+    print("heads substats: "+substats[np.random.randint(0, len(substats))])
+
+heads()
+
+def sands():
+    main_stats = ["hp%","atk%","def%","em","er"]
+    print("sands main stats: "+main_stats[np.random.randint(0, len(main_stats))])
+
+sands()
+
+def cups():
+    main_stats = ["hp%","atk%","def%","dmg bonus%"]
+    print("cups main stats: "+main_stats[np.random.randint(0, len(main_stats))])
+
+cups()
+
+def shoes():
+    main_stats = ["hp%","atk%","def%","cr","cd","em","healing bonus"]
+    print("shoes main stats: "+main_stats[np.random.randint(0, len(main_stats))])
+
+shoes()
